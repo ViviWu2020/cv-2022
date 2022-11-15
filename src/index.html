@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+
+      /* .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      } */
+    </style>
+    <style>
+      p {
+        margin: 0.3em 0;
+      }
+
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      strong {
+        font-weight: normal;
+        color: #ff4136;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      p,
+      li {
+        color: #666;
+      }
+
+      strong {
+        font-weight: normal;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      .bio {
+        position: relative;
+      }
+
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+    <style>
+      .projects p {
+        color: #666;
+      }
+
+      .projects strong {
+        color: #ff4136;
+      }
+
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+
+      .projects > ol > li > header {
+        display: flex;
+      }
+
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+      .projects > ol > li > header > span {
+        margin-left: 20px;
+      }
+    </style>
+    <style>
+      @media print {
+        #skills {
+          display: none;
+        }
+      }
+
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
+
+      .skills > .wrapper > ul {
+        color: #666;
+      }
+
+      .skills > .wrapper strong {
+        color: #ff4136;
+      }
+
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+    <style>
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+
+      .openSource header {
+        position: relative;
+        display: flex;
+      }
+      .openSource header > a {
+        margin-left: 20px;
+      }
+      .openSource header > span {
+        margin-left: 20px;
+      }
+    </style>
+    <style>
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
+
+      .jobs header > h3 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+
+        .skills .wrapper {
+          flex-direction: column;
+        }
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1>吴嘉慧</h1>
+        <img src="./images/vivi.jpg" alt="" width="80" height="100" />
+        <p>女 | 25岁 | 初级前端开发 | 广州/佛山</p>
+        <p>
+          手机: <a href="tel:15918104632">15918104632</a> | 微信: 15918104632 |
+          邮箱: <a href="mailto:670199699@qq.com">670199699@qq.com</a>
+        </p>
+      </section>
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2016年</time>~<time>2020年</time></span>
+          广东外语外贸大学南国商学院 英语语言文化学院 本科
+        </p>
+      </section>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>猪仔钱罐</h3>
+              <span>
+                <a href="https://github.com/ViviWu2020/storney-2-website"
+                  >源码链接</a
+                >
+                <a href="https://viviwu2020.github.io/storney-2-website/#/money"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>React</strong> /
+              <strong>TypeScript</strong> 的移动端单页面应用。
+            </p>
+            <p>
+              这是在已经运用Vue开发的旺财记账应用的基础上，用React开发的升级版的移动端单页面应用。主要优化一些用户体验与页面效果。
+            </p>
+            <p>
+              该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks
+              有了深刻的理解和应用。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>旺财记账</h3>
+              <span>
+                <a href="https://github.com/ViviWu2020/storney-website"
+                  >源码链接</a
+                >
+                <a href="https://viviwu2020.github.io/storney-website/#/money"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>Vue2</strong> /
+              <strong>TypeScript3</strong> 的移动端单页面应用。
+            </p>
+            <p>
+              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+              而且可以通过图表查看自己的消费习惯。
+            </p>
+            <p>
+              运用了与Vue相关的技术，例如<strong
+                >Vue Cli4、Vue Router3 和Vuex 3</strong
+              >让我对Vue有了深刻的理解和应用。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>Dodo-UI</h3>
+              <span>
+                <a href="https://github.com/ViviWu2020/dodo-ui">源码链接</a>
+                <a
+                  href="https://viviwu2020.github.io/dodo-ui-website/index.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>Vue3</strong> / <strong>TypeScript3</strong> 的
+              UI 库， 涵盖了 Button、Switch 等常见的 UI 组件。
+            </p>
+            <p>
+              写这个组件库的目的是将这段时间学习到的知识总结归类，全部内容自己设计和编辑，
+              尽量不借鉴第三方的库。
+            </p>
+            <p>
+              深入研究
+              Vue3，使用了<strong>setup、inMounted、watchEffect、ref、computed</strong>等
+              Composition API。
+            </p>
+            <p>模块化的源代码简洁明了，易于阅读。</p>
+            <p>
+              我还推出了官方文档，可在线查看示例代码，并支持 PC 和手机浏览。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>大屏可视化</h3>
+              <span>
+                <a href="https://gitee.com/vivi2021/screen-1/tree/master/"
+                  >源码私有</a
+                >
+                <a href="https://vivi2021.gitee.io/screen-1">项目预览</a>
+              </span>
+            </header>
+            <p>
+              这个项目是我在学习前端可视化与 <strong>echarts</strong>
+              时，仿照公开的的开源项目制作而成的。
+            </p>
+            <p>
+              页面布局使用了 <strong>Grid</strong> 和
+              <strong>Flex</strong>布局，为了适应所有屏幕，我使用了动态
+              <strong>rem</strong> 方案。
+              项目中包含的图例有柱形图、折线图、饼图、地图和表格等，并且所有图例都可以实时更新数据并辅以动画交互。
+            </p>
+            <p>
+              通过这个项目，我掌握了<strong>大屏可视化项目</strong>的制作技巧。
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>自己写的 DOM 库</h3>
+              <a href="https://github.com/ViviWu2020/dom-1">源码链接</a>
+            </header>
+            <p>
+              实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>用node.js写的静态服务器</h3>
+              <a href="https://github.com/ViviWu2020/node-server">源码链接</a>
+            </header>
+            <p>
+              实现根据 url 返回不同的文件、处理查询参数、处理不存在的文件、非
+              GET 请求、和添加缓存选项等功能。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>用node.js制作的简易翻译工具</h3>
+              <a href="https://github.com/ViviWu2020/node-translation"
+                >源码链接</a
+              >
+            </header>
+            <p>英译中；中译英</p>
+          </li>
+          <li>
+            <header>
+              <h3>会动的皮卡丘</h3>
+              <span>
+                <a href="https://github.com/ViviWu2020/pikachu">源码链接</a>
+                <a href="https://viviwu2020.github.io/pikachu/dist/index.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品。
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2 class="page2">技能</h2>
+        <div class="wrapper">
+          <div id="main" style="width: 480px; height: 250px"></div>
+          <ul>
+            <li>熟悉页面制作技巧，能将设计稿很好地还原。</li>
+            <li>
+              熟悉<strong>前后端分离</strong>技术，包括
+              AJAX、跨域、前端路由、Cookie、Session 等。
+            </li>
+            <li>
+              熟练掌握 <strong>Vue全家桶</strong>的使用，包括
+              VueCli、VueRouter、Vuex 等，并且能够配合elementUI、vantUI使用。
+            </li>
+            <li>
+              基本掌握 <strong>React全家桶</strong>的使用，包括
+              create-react-app、ReactRouter、Redux 等。
+            </li>
+            <li>
+              熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值。
+            </li>
+            <li>
+              了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的。
+            </li>
+            <li>了解 <strong>Webpack</strong>的配置和优化。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>美国六旗游乐园</h3>
+              <h4>销售助理(实习)</h4>
+              <span><time>2019年6月</time>~<time>2019年12月</time></span>
+            </header>
+            <ul>
+              <li>顺利完成赴美带薪项目。协助经理维护店铺运营工作。</li>
+              <li>完成每日任务，负责与顾客沟通解答工作并兼顾店铺独立运营。</li>
+              <li>工作后期，负责给新进同事进行培训，提高其工作效率。</li>
+            </ul>
+          </li>
+          <li>
+            <header>
+              <h3>奥园集团</h3>
+              <h4>营运专员（实习）</h4>
+              <span><time>2020年2月</time>~<time>2020年7月</time></span>
+            </header>
+            <ul>
+              <li>
+                负责辖区商户营运管理，完成各项费用的收取、保证商场常态化运营；
+              </li>
+              <li>
+                协助上级开展外部市场、内部客户和商户调查分析工作等。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header>
+              <h3>辅导机构老师</h3>
+              <span><time>2020年10月</time>~<time>2021年09月</time></span>
+            </header>
+            <ul>
+              <li>
+                掌握小学英语教学大纲，认真制订计划，并按计划完成教学任务。
+              </li>
+              <li>
+                积极开展课外活动，加强对尖子生和后进生的辅导，激发学生的积极性。
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li>
+            <a href="https://www.zhihu.com/people/hu-zi-56-73">我的博客</a
+            >，目前已有二十多篇技术文章
+          </li>
+        </ul>
+      </section>
+    </article>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.6.0/echarts.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
